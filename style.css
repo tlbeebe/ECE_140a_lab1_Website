@@ -1,65 +1,74 @@
+.header{ 
+	/*border-style: solid; */
+	border-width: 10px;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	font-weight: bold;
+}
+.names{ 
+	font-size: 24px; 
+}
+.names1{ 
+	font-size: 24px;
+	text-align: left;
 
-.header { grid-area: header; }
-.main { grid-area: main; }
-.right { grid-area: right; }
+ }
 
-.grid-container {
-  display: grid;
-  grid-template-areas:
-    'header header header header header header'
-    'menu main main main right right'
-    'menu footer footer footer footer footer';
-  grid-gap: 10px;
-  background-color: #90EE90;
-  padding: 10px;
+.content{ 
+	/*border-style: solid;*/
+	border-width: 10px; 
+	padding: 10px; 
+ }
+ .steps{ 
+	border-style: solid;
+	border-width: 8px; 
+	padding:10px; 
 }
 
-.grid-container > div {
-  background-color: rgba(255, 255, 255, 255);
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
+.img{ 
+	width: 600px;
+	height:450px;
+	display: block;
+	margin-left: auto; 
+	margin-right: auto;
+
+  }
+.back{ 
+	text-align: left;
+	font-size: 12px;
 }
-h1{
-  font-size: 40px;
-  text-align: center; 
+
+.section{ 
+	border-style: solid; 
+	border-width: 8px;
+	border-color: black;  }
+
+form{ 
+	padding: 10px;
 }
 
-h2{ 
- text-align: left; }
-
-table {
-  border-collapse: collapse;
-  border: 2px solid black;
-  width: 100px; 
-  text-align: center;
-  float: right;
-} 
-
-
-p{ 
-font-size: 20px;
-text-align: left; }
-th,td {
-  border: 2px solid black;
-  text-align: center; 
-  padding: 10px;
-  font-size: 17px;
+button{ 
+	font-size: 20px; 
 }
 
 a{ 
-  color: blue; 
+	font-size: 35px; 
+	font-weight: bold; 
+	text-align: center;
 }
 
-
-
-table.info {
-  table-layout: auto;
-  font-size: 17px; 
-  width: 100px;  
-  height:100px; 
-  padding: 100px; 
-  text-align: center; 
-  
+ h3{ 
+	font-weight: bold;
+	font-size: 35px;
+	text-align: center; 
 }
 
+h2{ 
+	text-align: center;
+	font-size: 30px;
+  }
+
+p{ 
+	font-size: 20px;
+ }
