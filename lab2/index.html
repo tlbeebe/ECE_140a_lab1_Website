@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <link href="style.css" rel="stylesheet"/> #Links css sheet
+  </head>
+  
+  
+  <body>
+
+  <script type="text/javascript" src="myScript.js"></script> #Connects javascript file, need to change path and file name
+
+  <div class="grid-container">
+    
+    <div class="header">  
+      <h1> <center> Lab 1 </center></h1>
+
+
+      <img src="img/temp.png" class="img" >
+
+      <div class="names1">
+        <ul class="names" style="list-style-type:disc;">
+        <li>Group name: MFIT</li>
+        <li>Members: Faraz Noor Shaikh, Michael Schnabel, Travis Beebe, Ulises Orozco </li>
+        </ul>  
+      </div>
+    </div>
+    
+
+
+  </div>
+
+  <div class= "content"> 
+
+    
+  <h2> Current Sensor Readings </h2>
+
+    <p>
+    
+    #Not sure if I can run CRON in html yet, it probably runs in javascript, but we'll see
+    #This next line should send current sensor readings to an output file continuously
+    #And we should also have it update variables for the readings
+    ***** /usr/bin/php /route_to/our_script/for_running/measure_readings.php > /current_readings/file_loc 
+    </p>
+
+    #Displays the temperature readings, I'm trying to update tags at first
+    <p id=temp> Current Temperature: 
+    </p>
+
+    #Displays the humidity readings
+    <p id=humidity> Current Humidity: 
+    </p>
+
+    #Displays the light readings
+    <p id=light> Current Light Level: 
+    </p>
+
+    #Displays the sound readings
+    <p id=sound> Current Sound Level: 
+    </p>
+
+
+
+    <div class="steps ">
+      <p> The following are the webpages with Google Charts information on readings </p>
+      
+      <form action="Photocell.html">
+         <button type="submit">Photocell Readings </button>
+      </form>
+
+      <form action="DHT22.html">
+         <button type="submit"> DHT22 Readings (both temperature and humidity) </button>
+      </form>
+
+      <form action="soundSensor.html">
+         <button type="submit"> Sound Sensor Readings </button>
+      </form>
+
+    </div>
+
+
+
+    <h3> Description </h3>
+
+    <p>
+    The lab objectives for this session were:
+    </p>
+      <p>■ Integrating use of firebase within the Rasbperry Pi</p>
+      <p>■ Updating a webpage with readings for each sensor attached to the PI </p>
+      <p>■ Creating live charts for the last 60 readings of the Pi's sensors
+    </p>
+    
+    </p>
+
+
+  </div>
+
+  </body>
+
+
+</html>
